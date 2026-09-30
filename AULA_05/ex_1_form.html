@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Exercício 1</title>
+	</head>
+	<body>
+				<form action="#" method="POST">
+					<label for="codigo">Código: </label>
+					<br>
+					<input type="number;" id="codigo" name="codigo" value="0" disabled>
+					<br><br>
+					
+					<label for="ctt">N° do Contato:</label>
+					<input type="number" id="ctt"  required> 
+					<label for="loja">N° da Loja: </label>
+					<input type="number" id="number" name="loja" required>
+					<br><br>
+					
+					<label for="descricao">Descrição:</label>
+					<input type="text" id="descricao" name="descricao" required>
+					<br>
+					
+					<label for="data">Data:</label>
+					<input type="date" id="data" name="data" required>
+					<br><br>
+					
+					<label for="operadora">Operadora:</label>
+					<select name="operadora" id="operadora" required>
+						<option value=""></option>
+						<option value="claro">Claro</option>
+						<option value="tim">Tim</option>
+						<option value="vivo">Vivo</option>
+						<option value="oi">OI</option>
+						<option value="intercel">Inter Cel</option>
+					</select>
+					<br>
+					
+					<label for="filial">Filial:</label>
+					<select name="filial" id="filial" required>
+						<option value=""></option>
+						<option value="filial1">filial 1</option>
+						<option value="filial2">filial 2</option>
+						<option value="filial3">filial 3</option>
+						<option value="filial4">filial 4</option>
+						<option value="filial5">filial 5</option>
+						
+					</select>
+					
+					<br>
+					<label for="empresa_matriz">Empresa Matriz:</label>
+					<select name="empresa_matriz" id="empresa_matriz" required>
+						<option value=""></option>
+						<option value="loja1">Loja 1</option>
+						<option value="loja2">Loja 2</option>
+						<option value="loja3">Loja 3</option>
+						<option value="loja4">Loja 4</option>
+						<option value="loja5">Loja 5</option>
+					</select>
+					<br>
+					
+					<label for="origem_contas">Origem das Contas Contabeis</label>
+					<select name="origem_contas" id="origem_contas" required>
+					<option value="contrato">Contrato</option>
+						<option value="patrimonio">Patrimônio Líquido</option>
+						<option value="nao_circulante">Passivo Não Circulante</option>
+					</select>
+					
+					<input type="checkbox" id="deposito" name="deposito" required>Depósito na conta informada no arquivo
+					
+					<br>
+					<label for="status">Status do Contato</label>
+					<select name="status" id="status" required>
+						<option value="ativo">Ativo</option>
+						<option value="inativo">Inativo</option>
+						<option value="pendente">Pendente</option>
+					</select>
+					
+					<input type="checkbox" id="conciliacao" name="conciliacao" required>Conciliação Consolada 
+					
+					<br>
+					
+					<label for="identificar_comprovante">Identificar Comprovante por</label>
+					<select name="identificar_comprovante" id="identificar_comprovante" required>
+						<option value="n_autorização">Número da Autorização</option>
+						<option value="nota_fiscal">nota fiscal</option>
+						<option value="cod_barras">codigo de barras</option>
+						<option value="boleto">Boleto</option>
+					</select>
+					
+					<input type="checkbox" id="remover_zeros" name="remover_zeros" required>Remover zeros esquerda do N°Comprovante
+					<br><br>
+					
+					<input type="checkbox" id="campo_usuario" name="campo_usuario" required>Usar campo de usuários(Data da Transação do Cartão) do Contas a Receber para identificar o comprovante na conciliação
+					<input type="checkbox" id="validar_valores" name="validar_valores" required>Validar valores na conciliação automática
+					<br>
+					<input type="checkbox" id="gerar_contas" name="gerar_contas" required>Gerar Contas a Receber por Conta para comprovantes não identificados
+					<input type="checkbox" id="receber_contas" name="receber_contas" disabled><label style="color:gray"> Contas a Receber Agrupado </label>
+					<br>
+					<input type="checkbox" id="projeto" name="projeto" required>Usar Projeto do Cadastro de Equipamento
+					<input type="checkbox" id="LMC" name="LMC" required>LMC Agrupado de Comprovante de Cartão
+					<br>
+					
+					<label for="">Cartão</label>
+					<input type="number" id="numero" name="numero" placeholder="Não Informado" disabled>
+					<br>
+					<label for="">Forma de Pagamento</label>
+					<input type="number" id="pagamento" name="pagamento" placeholder="Não Informado" disabled>
+					
+					<br>
+					<input  style="background-color: yellow" type="submit" value="Inserir">
+					<input style="background-color: yellow" type="submit" value="Cancelar">
+					<input style="background-color: yellow" type="submit" value="Log">
+				</form>
+	</body>
+</html>
