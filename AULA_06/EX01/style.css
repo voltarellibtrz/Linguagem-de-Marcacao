@@ -1,0 +1,12 @@
+.titulo{
+    text-align: center;
+}
+p{
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #333333;
+    text-align: justify;
+    line-height: 1.6;
+    text-indent: 30px;
+    text-shadow: 2px 2px 5px #aaaaaa;
+}
