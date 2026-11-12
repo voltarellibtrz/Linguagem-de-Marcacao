@@ -1,0 +1,12 @@
+img{
+    width: 20%;
+}
+.esquerda{
+    float: left;
+}
+.direita{
+    float: right;
+}
+.limpar{
+    clear: both;
+}
